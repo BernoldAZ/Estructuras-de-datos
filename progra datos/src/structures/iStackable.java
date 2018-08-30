@@ -2,13 +2,12 @@ package structures;
 
 public interface iStackable {
 	
-	public <T> void push (T pValue);
+	public void push (Object pValue);
 	
-	public <T> T pop();
+	public Object pop();
 	
 	public boolean empty();
 		
 	
 
 }
-
