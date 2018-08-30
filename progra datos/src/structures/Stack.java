@@ -12,10 +12,14 @@ public class Stack extends LinkedDoubleList implements structures.iStackable{
 	}
 	
 	public void push( Object pObject) {
-		this.insert(pObject);		
+		this.insert(pObject,0);		
 	}
 	
 	public Object pop () {
-		this.remove(0);
+		Object value = this.get(0);
+		this.delete(0);
+		return value;
 	}
+
 }
+
