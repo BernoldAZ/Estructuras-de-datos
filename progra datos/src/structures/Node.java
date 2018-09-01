@@ -1,37 +1,45 @@
 package structures;
 
-public class Node {
-	private Object value;
-	private Node next;
-	private Node previous;
+public class Node <T> {
+	private T value;
+	private Node<T> next;
+	private Node<T> previous;
 	
 	public Node() {
 		next = null;
 	}
 	
-	public Node(Object pValue) {
+	public Node(T pValue) {
 		this();
 		value = pValue;
 	}
-
-	public Object getValue() {
-		return value;
-	}
-	public void setValue(Object value) {
-		this.value = value;
-	}
-	public Node getNext() {
-		return next;
-	}
-	public void setNext(Node next) {
+	
+	public Node(T pValue, Node<T> previous, Node<T> next) {
+		this();
+		value = pValue;
+		this.previous = previous;
 		this.next = next;
 	}
-	public Node getPrevious() {
+
+	public T getValue() {
+		return value;
+	}
+	public void setValue(T value) {
+		this.value = value;
+	}
+	public Node<T> getNext() {
+		return next;
+	}
+	public void setNext(Node<T> next) {
+		this.next = next;
+	}
+	public Node<T> getPrevious() {
 		return previous;
 	}
-	public void setPrevious(Node previous) {
+	public void setPrevious(Node<T> previous) {
 		this.previous = previous;
 	}
 	
 
 }
+

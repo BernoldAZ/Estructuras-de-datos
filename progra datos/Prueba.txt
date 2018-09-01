@@ -1,0 +1,3 @@
+"[{\"dorsal\":6," + "\"name\":\"Iniesta\","
+                + "\"demarcation\":[\"Right winger\",\"Midfielder\"],"
+                + "\"team\":\"FC Barcelona\"}]"
