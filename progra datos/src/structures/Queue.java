@@ -3,6 +3,7 @@ package structures;
 public class Queue extends LinkedDoubleList implements structures.iQueueable{
 	Node first;
 	Node last;
+	int priority;
 	
 	public Queue() {
 		first = null;

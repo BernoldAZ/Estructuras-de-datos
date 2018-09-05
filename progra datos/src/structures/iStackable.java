@@ -6,7 +6,6 @@ public interface iStackable {
 	
 	public <T> T pop();
 	
-	public boolean empty();
 		
 	
 
